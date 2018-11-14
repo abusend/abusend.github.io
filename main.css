@@ -29,9 +29,7 @@
   max-width: auto;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
-.noshadow {
-  box-shadow: none !important;
-}
+
 body {
     background-color: #FFFC00;
     background-blend-mode: darken;
@@ -45,20 +43,19 @@ body {
   position: absolute;
   height: 3%;
   font-family: Avenir-Roman;
-  font-size: 1em;
   color: #000000;
   letter-spacing: 0.11px;
   padding-left: 1.6%;
   -webkit-transform: translateZ(0);
-  left: 1.5%;
+  left: 1.7%;
 }
 
 .blue-msg {
-  border-left: 2px solid #0EADFF;
+  border-left: 0.32vh solid #0EADFF;
 }
 
 .red-msg {
-  border-left: 2px solid #E92754;
+  border-left: 0.32vh solid #E92754;
 }
 
 .red-top {
@@ -71,7 +68,6 @@ body {
 .msg-top {
   position: absolute;
   font-family: "Avenir-Heavy";
-  font-size: 11px;
   letter-spacing: 0.88px;
   left: 1.5%;
 }
