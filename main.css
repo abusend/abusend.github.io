@@ -1,0 +1,115 @@
+.sc {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width: 100%;
+  height: 100%;
+}
+
+#chat-wrapper {
+  position: relative;
+}
+#sc-div-0{
+  z-index: 3;
+  position: absolute;
+}
+#sc-div-1{
+  z-index: 2;
+  position: absolute;
+}
+#sc-div-2 {
+  z-index: 1;
+  position: absolute;
+}
+.sc-img {
+  border-radius: 3%;
+  border-width: 2px;
+  object-fit: cover;
+  height: 90%;
+  max-width: auto;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+.noshadow {
+  box-shadow: none !important;
+}
+body {
+    background-color: #FFFC00;
+    background-blend-mode: darken;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.msg {
+  position: absolute;
+  height: 3%;
+  font-family: Avenir-Roman;
+  font-size: 1em;
+  color: #000000;
+  letter-spacing: 0.11px;
+  padding-left: 1.6%;
+  -webkit-transform: translateZ(0);
+  left: 1.5%;
+}
+
+.blue-msg {
+  border-left: 2px solid #0EADFF;
+}
+
+.red-msg {
+  border-left: 2px solid #E92754;
+}
+
+.red-top {
+  color: #E92754;
+}
+.blue-top {
+  color: #0EADFF;
+}
+
+.msg-top {
+  position: absolute;
+  font-family: "Avenir-Heavy";
+  font-size: 11px;
+  letter-spacing: 0.88px;
+  left: 1.5%;
+}
+#msg-top-1 {
+  top: 46px;
+}
+
+#msg-1 {
+  top: 72px;
+}
+.chatbox {
+	color: transparent;
+  position: absolute;
+	text-shadow: 0 0 black;
+  font-family: "Avenir";
+  height: 3%;
+  top: 51.6%;
+  left: 1.4%;
+  outline: none;
+}
+
+/* Customize the look of your caret */
+#caret {
+	border-right: 0.12em solid #E92754;
+	margin-right: -0.12em;
+  border-radius: 25%;
+	animation: blink-animation 1s steps(2, start) infinite;
+}
+@keyframes blink-animation {
+	to {
+		visibility: hidden;
+	}
+}
+
+[contenteditable=true]:empty:before {
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+  color: #CED4DA;
+  text-shadow: none;
+  font-weight: 450;
+}
