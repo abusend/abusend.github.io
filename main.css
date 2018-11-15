@@ -42,7 +42,7 @@ body {
 .msg {
   position: absolute;
   height: 3%;
-  font-family: av-Roman, 'Nunito';
+  font-family: "Avenir-Roman", 'Nunito';
   color: #000000;
   letter-spacing: 0.11px;
   padding-left: 1.6%;
