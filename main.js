@@ -11,7 +11,7 @@ $("#sc-div-1").click(function(){
   $('head').append('<style id="addedCSS" type="text/css">.msg {font-size:'+ ($("#sc-div-2").height() * 0.024) +' }</style>');
   $('head').append('<style id="addedCSS" type="text/css">.msg-top {font-size:'+ ($("#sc-div-2").height() * 0.018)+' }</style>');
   $(this).delay(750).queue(function() {
-    createMessage("Oi", "PALASH", "blue");
+    createMessage("Oi, happy anniversary my love <3", "PALASH", "blue");
    $(this).dequeue();
   });
 });
