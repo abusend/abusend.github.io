@@ -7,8 +7,8 @@ $("#sc-div-1").click(function(){
   $(".chatbox").get(0).focus();
   $(".chatbox").width($("#sc-2").width() * 0.96);
   $(".chatbox").empty();
-  $(".chatbox").css({ fontSize: ($("#sc-div-2").height() * 0.028) });
-  $('head').append('<style id="addedCSS" type="text/css">.msg {font-size:'+ ($("#sc-div-2").height() * 0.027) +' }</style>');
+  $(".chatbox").css({ fontSize: ($("#sc-div-2").height() * 0.026) });
+  $('head').append('<style id="addedCSS" type="text/css">.msg {font-size:'+ ($("#sc-div-2").height() * 0.024) +' }</style>');
   $('head').append('<style id="addedCSS" type="text/css">.msg-top {font-size:'+ ($("#sc-div-2").height() * 0.018)+' }</style>');
   $(this).delay(750).queue(function() {
     createMessage("Oi", "PALASH", "blue");
@@ -20,9 +20,9 @@ var height = $(window).height();
 $(window).on('resize', function(){
    if($(this).height() != height){
       height = $(this).height();
-      $(".chatbox").css({ fontSize: ($("#sc-div-2").height() * 0.028) });
-      $('head').append('<style id="addedCSS" type="text/css">.msg {font-size:'+ ($("#sc-div-2").height() * 0.027) +' }</style>');
-      $('head').append('<style id="addedCSS" type="text/css">.msg-top {font-size:'+ ($("#sc-div-2").height() * 0.018)+' }</style>');
+      $(".chatbox").css({ fontSize: ($("#sc-div-2").height() * 0.026) });
+      $('head').append('<style id="addedCSS" type="text/css">.msg {font-size:'+ ($("#sc-div-2").height() * 0.024) +' left:  '+ ($("#sc-div-2").width() * 0.024) +' }</style>');
+      $('head').append('<style id="addedCSS" type="text/css">.msg-top {font-size:'+ ($("#sc-div-2").height() * 0.018)+  ' left:  '+ ($("#sc-div-2").width() * 0.024) +'}</style>');
    }
 });
 

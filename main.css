@@ -42,7 +42,7 @@ body {
 .msg {
   position: absolute;
   height: 3%;
-  font-family: Avenir-Roman;
+  font-family: av-Roman, 'Nunito';
   color: #000000;
   letter-spacing: 0.11px;
   padding-left: 1.6%;
@@ -67,8 +67,9 @@ body {
 
 .msg-top {
   position: absolute;
-  font-family: "Avenir-Heavy";
+  font-family: "Avenir-Heavy", 'Nunito';
   letter-spacing: 0.88px;
+  font-weight: bold;
   left: 1.5%;
 }
 #msg-top-1 {
@@ -82,7 +83,7 @@ body {
 	color: transparent;
   position: absolute;
 	text-shadow: 0 0 black;
-  font-family: "Avenir";
+  font-family: "Avenir", 'Nunito';
   height: 3%;
   top: 51.6%;
   left: 1.4%;
