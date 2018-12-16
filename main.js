@@ -11,7 +11,8 @@ $("#sc-div-1").click(function(){
   $('head').append('<style id="addedCSS" type="text/css">.msg {font-size:'+ ($("#sc-div-2").height() * 0.024) +'; left:  '+ ($("#sc-div-2").width() * 0.024) +' }</style>');
   $('head').append('<style id="addedCSS" type="text/css">.msg-top {font-size:'+ ($("#sc-div-2").height() * 0.018)+  '; left:  '+ ($("#sc-div-2").width() * 0.024) +'}</style>');
   $(this).delay(750).queue(function() {
-    createMessage("Oi, happy anniversary my love <3", "PALASH", "blue");
+    createMessage("Oi Erika, you make me happy every moment", "PALASH", "blue");
+    createMessage("I hope you get better soon <3 ", "PALASH", "blue");
    $(this).dequeue();
   });
 });
@@ -81,6 +82,10 @@ function createMessage(text, sender, color){
 }
 
 function processMessage (text) {
+  if (text.replace(/[^ -~]+/g, "") === "ILOVEU"){
+    createMessage("https://imgur.com/a/U9jOS23", "PALASH", "blue");
+    return true;
+  }
   rs.sortReplies();
 	var reply = rs.reply("PALASH", text, this);
   $(this).delay(500).queue(function() {
